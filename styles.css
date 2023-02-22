@@ -82,6 +82,7 @@ body{
     }
     
     #mid{
+        position: absolute;
         top: 17px;
         right: -40px;
         font-size: 1.5rem;
@@ -114,9 +115,10 @@ body{
         font-size: 0.9rem;
     }
     
-    #mid{
-        top: 8.5px;
-        right: -29px;
+    #mid{   
+
+        bottom: 3.5px;
+        right: -27px; 
         font-size: 1rem;
     }
     
@@ -148,9 +150,9 @@ body{
     }
     
     #mid{
-        top: 8.5px;
-        right: -26px;
-        font-size: 1rem;
+        bottom: 4px;
+        right: -25px;
+        font-size: .9rem;
     }
     
     .day_wrapper{

@@ -106,18 +106,18 @@ body{
 @media all and (max-width: 430px){
     #time{
         text-shadow: 0 0 15px rgb(168, 87, 29);
-        font-size: 4rem;
+        font-size: 5rem;
     }
     
     #sec{
-        bottom:10px;
-        font-size: 0.7rem;
+        bottom:15px;
+        font-size: 0.9rem;
     }
     
     #mid{
         top: 8.5px;
-        right: -20px;
-        font-size: 0.9rem;
+        right: -27px;
+        font-size: 1rem;
     }
     
     .day_wrapper{
@@ -125,13 +125,46 @@ body{
     }
     
     .day_wrapper span{
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         font-weight: 150;
     }
     
     #showDate{
         left: 5px;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
+    }
+
+}
+
+@media all and (max-width: 343px){
+    #time{
+        text-shadow: 0 0 15px rgb(168, 87, 29);
+        font-size: 4rem;
+    }
+    
+    #sec{
+        bottom:15px;
+        font-size: 0.9rem;
+    }
+    
+    #mid{
+        top: 8.5px;
+        right: -23px;
+        font-size: 1rem;
+    }
+    
+    .day_wrapper{
+        left: 5px;
+    }
+    
+    .day_wrapper span{
+        font-size: 0.75rem;
+        font-weight: 150;
+    }
+    
+    #showDate{
+        left: 5px;
+        font-size: 0.9rem;
     }
 
 }

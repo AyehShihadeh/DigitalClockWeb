@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #000;
+
+}
+
+
+.text_color{
+    color:sandybrown; 
+}
+
+.text_color_day{
+    color: rgb(192, 124, 64);
+}
+
+.text_color_date{
+    color:rgb(145, 84, 30);
+}
+
+.time_wrapper{
+    position: relative;
+}
+
+#time{
+    text-shadow: 0 0 40px rgb(168, 87, 29);
+    font-size: 12rem;
+}
+
+#sec{
+    position: absolute;
+    bottom:40px;
+    font-size: 2rem;
+}
+
+#mid{
+    position: absolute;
+    top: 35px;
+    right: -80px;
+    font-size: 3rem;
+}
+
+.day_wrapper{
+    display: flex;
+    position: relative;
+    left: 20px;
+    justify-content: space-between;
+}
+
+.day_wrapper span{
+    font-size: 2rem;
+    font-weight: 600;
+    opacity: 0.3;
+}
+
+#showDate{
+    position: relative;
+    left: 20px;
+    font-size: 2rem;
+}
+
+@media all and (max-width: 840px){
+    #time{
+        text-shadow: 0 0 20px rgb(168, 87, 29);
+        font-size: 6rem;
+    }
+    
+    #sec{
+        bottom:20px;
+        font-size: 1rem;
+    }
+    
+    #mid{
+        top: 17px;
+        right: -40px;
+        font-size: 1.5rem;
+    }
+    
+    .day_wrapper{
+        left: 10px;
+    }
+    
+    .day_wrapper span{
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    
+    #showDate{
+        left: 10px;
+        font-size: 1rem;
+    }
+
+}
+
+@media all and (max-width: 430px){
+    #time{
+        text-shadow: 0 0 15px rgb(168, 87, 29);
+        font-size: 4rem;
+    }
+    
+    #sec{
+        bottom:10px;
+        font-size: 0.7rem;
+    }
+    
+    #mid{
+        top: 8.5px;
+        right: -20px;
+        font-size: 0.9rem;
+    }
+    
+    .day_wrapper{
+        left: 5px;
+    }
+    
+    .day_wrapper span{
+        font-size: 0.7rem;
+        font-weight: 150;
+    }
+    
+    #showDate{
+        left: 5px;
+        font-size: 0.7rem;
+    }
+
+}

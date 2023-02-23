@@ -47,7 +47,7 @@ body{
 #mid{
     position: absolute;
     top: 35px;
-    right: -80px;
+    /* right: -80px; */
     font-size: 3rem;
 }
 
@@ -84,7 +84,7 @@ body{
     #mid{
         position: absolute;
         top: 17px;
-        right: -40px;
+        /* right: -40px; */
         font-size: 1.5rem;
     }
     
@@ -118,7 +118,7 @@ body{
     #mid{   
 
         bottom: 3.5px;
-        right: -27px; 
+        /* right: -27px;  */
         font-size: 1rem;
     }
     
@@ -151,7 +151,7 @@ body{
     
     #mid{
         bottom: 4px;
-        right: -25px;
+        /* right: -25px; */
         font-size: .9rem;
     }
     

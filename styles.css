@@ -12,21 +12,41 @@ body{
     place-items: center;
     height: 100vh;
     font-family: 'Orbitron', sans-serif;
-    background-color: #000;
+    background-color: var(--bg-color);
 
+}
+
+select {
+    position: absolute;
+    margin: 3px;
+    top: 0px;
+    left: 0px;
+    padding: 0.2rem 0.3rem;
+    font-size: .7rem;
+    font-family: inherit;
+    border-radius: 0.25rem;
+    background-color: var(--select-bg-color);
+    color: black;
+    border: none;
+    outline: 0px solid transparent;
+
+}
+
+option{
+    background-color: var(--select-bg-color);
 }
 
 
 .text_color{
-    color:sandybrown; 
+    color: var(--text-color); 
 }
 
 .text_color_day{
-    color: rgb(192, 124, 64);
+    color: var(--day-color);
 }
 
 .text_color_date{
-    color:rgb(145, 84, 30);
+    color: var(--date-color);
 }
 
 .time_wrapper{
@@ -34,8 +54,8 @@ body{
 }
 
 #time{
-    text-shadow: 0 0 40px rgb(168, 87, 29);
     font-size: 12rem;
+    text-shadow: var(--time-shadow);
 }
 
 #sec{
@@ -47,7 +67,6 @@ body{
 #mid{
     position: absolute;
     top: 35px;
-    /* right: -80px; */
     font-size: 3rem;
 }
 
@@ -72,7 +91,7 @@ body{
 
 @media all and (max-width: 840px){
     #time{
-        text-shadow: 0 0 20px rgb(168, 87, 29);
+        text-shadow: var(--time-shadow2);
         font-size: 6rem;
     }
     
@@ -84,7 +103,6 @@ body{
     #mid{
         position: absolute;
         top: 17px;
-        /* right: -40px; */
         font-size: 1.5rem;
     }
     
@@ -106,7 +124,7 @@ body{
 
 @media all and (max-width: 430px){
     #time{
-        text-shadow: 0 0 15px rgb(168, 87, 29);
+        text-shadow: var(--time-shadow3);
         font-size: 5rem;
     }
     
@@ -118,7 +136,6 @@ body{
     #mid{   
 
         bottom: 3.5px;
-        /* right: -27px;  */
         font-size: 1rem;
     }
     
@@ -140,7 +157,7 @@ body{
 
 @media all and (max-width: 343px){
     #time{
-        text-shadow: 0 0 15px rgb(168, 87, 29);
+        text-shadow: var(--time-shadow4);
         font-size: 4rem;
     }
     
@@ -151,7 +168,6 @@ body{
     
     #mid{
         bottom: 4px;
-        /* right: -25px; */
         font-size: .9rem;
     }
     
@@ -170,3 +186,77 @@ body{
     }
 
 }
+
+:root,
+    :root.green{
+        --text-color: #00ff01;
+        --day-color: #02b102;
+        --date-color: rgb(4, 158, 4);
+        --time-shadow: 0 0 40px lime;
+        --time-shadow2: 0 0 20px lime;
+        --time-shadow3: 0 0 15px lime;
+        --time-shadow4: 0 0 14px lime;
+        --bg-color: rgb(0, 32, 0);
+        --select-bg-color: rgb(1, 254, 1, .1);
+    }
+
+    :root.pink{
+        --text-color: rgb(255, 52, 154);
+        --day-color: hotpink;
+        --date-color: rgb(214, 68, 141);
+        --time-shadow: 0 0 40px rgb(250, 145, 163);
+        --time-shadow2: 0 0 20px rgb(250, 135, 154);
+        --time-shadow3: 0 0 15px rgb(250, 144, 162);
+        --time-shadow4: 0 0 14px rgb(248, 147, 164);
+        --bg-color: rgb(133, 0, 73);
+        --select-bg-color: rgb(255, 52, 154, .1);
+    }
+
+    :root.red{
+        --text-color: red;
+        --day-color: rgb(221, 4, 4);
+        --date-color: rgb(155, 11, 11);
+        --time-shadow: 0 0 40px red;
+        --time-shadow2: 0 0 20px red;
+        --time-shadow3: 0 0 15px red;
+        --time-shadow4: 0 0 14px red;
+        --bg-color: rgb(63, 0, 0);
+        --select-bg-color: rgb(255, 0, 0, .1);
+    }
+
+
+    :root.blue{
+        --text-color: rgb(19, 19, 255);
+        --day-color: rgb(0, 128, 255);
+        --date-color: rgb(6, 6, 175);
+        --time-shadow: 0 0  40px rgb(0, 25, 252);
+        --time-shadow2: 0 0 20px rgb(0, 25, 252);
+        --time-shadow3: 0 0 15px rgb(36, 36, 255);
+        --time-shadow4: 0 0 14px rgb(36, 36, 255);
+        --bg-color: rgb(0, 0, 56);
+        --select-bg-color: rgb(19, 19, 255, .1);
+    }
+
+    :root.white{
+        --text-color: white;
+        --day-color: white;
+        --date-color: white;
+        --time-shadow: 0 0 40px white;
+        --time-shadow2: 0 0 20px white;
+        --time-shadow3: 0 0 15px white;
+        --time-shadow4: 0 0 14px white;
+        --bg-color: rgb(177, 175, 175);
+        --select-bg-color: rgb(255, 255, 255, .1);
+    }
+
+    :root.sand{
+        --text-color: rgb(244, 164, 96);
+        --day-color: rgb(192, 124, 64);
+        --date-color: rgb(145, 84, 30);
+        --time-shadow: 0 0 40px rgb(168, 87, 29);
+        --time-shadow2: 0 0 20px rgb(168, 87, 29);
+        --time-shadow3: 0 0 15px rgb(168, 87, 29);
+        --time-shadow4: 0 0 14px rgb(168, 87, 29);
+        --bg-color: rgb(75, 37, 11);
+        --select-bg-color: rgb(244, 164, 96, .1);
+    }

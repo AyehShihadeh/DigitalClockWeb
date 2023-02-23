@@ -26,7 +26,7 @@ select {
     font-family: inherit;
     border-radius: 0.25rem;
     background-color: var(--select-bg-color);
-    color: black;
+    color: var(--select-color);
     border: none;
     outline: 0px solid transparent;
 
@@ -198,18 +198,20 @@ option{
         --time-shadow4: 0 0 14px lime;
         --bg-color: rgb(0, 32, 0);
         --select-bg-color: rgb(1, 254, 1, .1);
+        --select-color:#008000;
     }
 
     :root.pink{
         --text-color: rgb(255, 52, 154);
         --day-color: hotpink;
-        --date-color: rgb(214, 68, 141);
-        --time-shadow: 0 0 40px rgb(250, 145, 163);
-        --time-shadow2: 0 0 20px rgb(250, 135, 154);
-        --time-shadow3: 0 0 15px rgb(250, 144, 162);
-        --time-shadow4: 0 0 14px rgb(248, 147, 164);
+        --date-color: rgb(216, 43, 130);
+        --time-shadow: 0 0 40px rgb(255, 0, 128);
+        --time-shadow2: 0 0 20px rgb(255, 0, 128);
+        --time-shadow3: 0 0 15px rgb(255, 0, 128);
+        --time-shadow4: 0 0 14px rgb(255, 0, 128);
         --bg-color: rgb(133, 0, 73);
         --select-bg-color: rgb(255, 52, 154, .1);
+        --select-color:rgb(255, 52, 154);
     }
 
     :root.red{
@@ -222,6 +224,7 @@ option{
         --time-shadow4: 0 0 14px red;
         --bg-color: rgb(63, 0, 0);
         --select-bg-color: rgb(255, 0, 0, .1);
+        --select-color:red;
     }
 
 
@@ -235,6 +238,7 @@ option{
         --time-shadow4: 0 0 14px rgb(36, 36, 255);
         --bg-color: rgb(0, 0, 56);
         --select-bg-color: rgb(19, 19, 255, .1);
+        --select-color:rgb(19, 19, 255);
     }
 
     :root.white{
@@ -247,6 +251,7 @@ option{
         --time-shadow4: 0 0 14px white;
         --bg-color: rgb(177, 175, 175);
         --select-bg-color: rgb(255, 255, 255, .1);
+        --select-color:rgb(122, 122, 122);
     }
 
     :root.sand{
@@ -259,4 +264,31 @@ option{
         --time-shadow4: 0 0 14px rgb(168, 87, 29);
         --bg-color: rgb(75, 37, 11);
         --select-bg-color: rgb(244, 164, 96, .1);
+        --select-color:rgb(244, 164, 96);
+    }
+
+    :root.black{
+        --text-color: black;
+        --day-color: rgb(0, 0, 0);
+        --date-color: black;
+        --time-shadow: 0 0 40px black;
+        --time-shadow2: 0 0 20px black;
+        --time-shadow3: 0 0 15px black;
+        --time-shadow4: 0 0 14px black;
+        --bg-color: rgb(31, 31, 31);
+        --select-bg-color: rgba(0, 0, 0, 0.1);
+        --select-color:grey;
+    }
+
+    :root.purple{
+        --text-color: rgb(206, 0, 206);
+        --day-color: rgb(175, 1, 175);
+        --date-color: rgb(148, 1, 148);
+        --time-shadow: 0 0 40px purple;
+        --time-shadow2: 0 0 20px purple;
+        --time-shadow3: 0 0 15px purple;
+        --time-shadow4: 0 0 14px purple;
+        --bg-color: rgb(51, 0, 51);
+        --select-bg-color: rgb(128, 0, 128, .1);
+        --select-color:rgb(173, 0, 173);
     }
